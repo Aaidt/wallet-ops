@@ -1,8 +1,11 @@
+import Image from "next/image"
+import VideoBackground from "@/components/VideoBackground"
+
 
 export default function Home() {
   return (
-    <div>
-      
+    <div className="">
+      <VideoBackground />
     </div>
 
   )
