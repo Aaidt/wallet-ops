@@ -5,7 +5,8 @@ import {
     WalletMultiButton
 } from '@solana/wallet-adapter-react-ui'
 import '@solana/wallet-adapter-react-ui/styles.css';
-import { SignMessage } from './components/SignMessage';
+// import { SignMessage } from './components/SignMessage';
+import { SendTokens } from './components/SendTokens';
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
 
           <WalletMultiButton />
           {/* <RequestAirdrop /> */}
-          <SignMessage />
+          {/* <SignMessage /> */}
+          <SendTokens />
 
         </WalletModalProvider>
       </WalletProvider>
