@@ -1,10 +1,11 @@
 import { ConnectionProvider, WalletProvider } from "@solana/wallet-adapter-react"
-import { RequestAirdrop } from "./components/RequestAirdrop"
+// import { RequestAirdrop } from "./components/RequestAirdrop"
 import {
     WalletModalProvider,
     WalletMultiButton
 } from '@solana/wallet-adapter-react-ui'
 import '@solana/wallet-adapter-react-ui/styles.css';
+import { SignMessage } from './components/SignMessage';
 
 function App() {
 
@@ -14,8 +15,9 @@ function App() {
         <WalletModalProvider>
 
           <WalletMultiButton />
-          <RequestAirdrop />
-          
+          {/* <RequestAirdrop /> */}
+          <SignMessage />
+
         </WalletModalProvider>
       </WalletProvider>
     </ConnectionProvider>
